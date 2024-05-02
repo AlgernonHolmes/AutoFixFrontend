@@ -3,9 +3,6 @@ import vehicleService from '../services/vehicle.service';
 import {TextField, Button, FormControl, MenuItem, Box, Grid} from '@mui/material';
 
 
-
-
-
 const VehicleForm = () => {
 
   const [formData, setFormData] = useState({
@@ -50,9 +47,9 @@ const VehicleForm = () => {
     borderRadius: '10px' }}>
 
       <Box mb={2}>
-      <Button type="submit" variant="contained" 
-      style={{ backgroundColor: '#800000', color: 'white' }}>Submit
-      </Button>
+        <Button type="submit" variant="contained" 
+        style={{ backgroundColor: '#800000', color: 'white' }}>Submit
+        </Button>
       </Box>
 
       <Grid container spacing={1}> 

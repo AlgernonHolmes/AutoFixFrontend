@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import vehicleService from '../services/vehicle.service';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import {Link} from 'react-router-dom';
+import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box, Button} from '@mui/material';
 
 const VehicleList = () => {
   const [vehicles, setVehicles] = useState([]);
@@ -19,6 +20,15 @@ const VehicleList = () => {
   };
 
   return (
+    <form>
+
+    <Box mb={2}>
+      <Button component={Link} to="/add" variant="contained" 
+      style={{ backgroundColor: '#800000', color: 'white' }}>
+        New vehicle
+      </Button>
+    </Box>
+      
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
@@ -31,6 +41,7 @@ const VehicleList = () => {
             <TableCell><b>Engine Type</b></TableCell>
             <TableCell><b>Number of Seats</b></TableCell>
             <TableCell><b>Milage</b></TableCell>
+            <TableCell><b>Add repair</b></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -44,11 +55,17 @@ const VehicleList = () => {
               <TableCell>{vehicle.engineType}</TableCell>
               <TableCell>{vehicle.numSeats}</TableCell>
               <TableCell>{vehicle.milage}</TableCell>
+              <TableCell>
+                  <Button component={Link} to="/add/repair" variant="contained" style={{ backgroundColor: '#800000', color: 'white' }}>
+                    R
+                  </Button>
+                </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
+    </form>
   );
 };
 

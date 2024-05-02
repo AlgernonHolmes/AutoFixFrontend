@@ -8,8 +8,8 @@ const getRepairsByPlate = (plate) => {
     return httpClient.get(`/api/v1/repair/${plate}`);
 }
 
-const createRepair = (plate, repair) => {
-    return httpClient.post(`/api/v1/repair/${plate}`, repair);
+const createRepair = (repair) => {
+    return httpClient.post(`/api/v1/repair/`, repair);
 }
 
 const updateRepair = (updatedRepair) => {
