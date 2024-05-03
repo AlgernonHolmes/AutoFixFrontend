@@ -8,6 +8,10 @@ import RepairForm from './components/RepairForm';
 import RepairList from './components/RepairList';
 import VehicleReceipt from './components/VehicleReceipt';
 import Navbar from './components/Navbar';
+import R1 from './components/R1';
+import R2 from './components/R2';
+import R3 from './components/R3';
+import R4 from './components/R4';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
           <Route path="/add/repair" element={<RepairForm/>}></Route>
           <Route path="/list/repair" element={<RepairList/>}></Route>
           <Route path="/receipt" element={<VehicleReceipt/>}></Route>
+          <Route path="/r1" element={<R1/>}></Route>
+          <Route path="/r2" element={<R2/>}></Route>
+          <Route path="/r3" element={<R3/>}></Route>
+          <Route path="/r4" element={<R4/>}></Route>
         </Routes>
       </div>
       <Navbar />

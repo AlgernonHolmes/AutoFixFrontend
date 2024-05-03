@@ -18,7 +18,7 @@ const Home = () => {
         <Box>
           <Button component={Link} to="/list" variant="contained" 
           style={{ backgroundColor: '#800000', color: 'white' }}>
-            Go to Vehicle List
+            Get started: Add a new Vehicle!
           </Button>
         </Box>
       </div>

@@ -34,6 +34,18 @@ const Navbar = () => {
                     <ListItem component={Link} to="/receipt" onClick={handleToggle}>
                         <ListItemText primary="Generate receipt" />
                     </ListItem>
+                    <ListItem component={Link} to="/r1" onClick={handleToggle}>
+                        <ListItemText primary="R1" />
+                    </ListItem>
+                    <ListItem component={Link} to="/r2" onClick={handleToggle}>
+                        <ListItemText primary="R2" />
+                    </ListItem>
+                    <ListItem component={Link} to="/r3" onClick={handleToggle}>
+                        <ListItemText primary="R3" />
+                    </ListItem>
+                    <ListItem component={Link} to="/r4" onClick={handleToggle}>
+                        <ListItemText primary="R4" />
+                    </ListItem>
                 </List>
             </Drawer>
         </>
